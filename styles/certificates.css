@@ -6,6 +6,8 @@
 .certificates-container h2 {
   position: relative;
   display: inline-block;
+  margin-top: 80px;
+  margin-bottom: 50px;
 }
 
 .certificates-container h2::after {

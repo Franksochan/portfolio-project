@@ -3,7 +3,8 @@
   color: #fff;
   padding: 20px;
   border-radius: 10px;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
+  height: 100%;
 }
 
 .projects-container h2 {
@@ -49,7 +50,6 @@
   }
 }
 
-
 .project {
   display: flex;
   flex-direction: column;
@@ -94,9 +94,6 @@ h2 {
 @media (max-width: 768px) {
   .project {
     width: 100%; 
-  }
-  .projects-container h2 {
-    margin-top: 0;
   }
 }
 

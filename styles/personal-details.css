@@ -14,7 +14,7 @@
   position: relative;
   display: inline-block;
   margin-top: 100px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   margin-left: 20px;
 }
 
@@ -94,11 +94,6 @@
 @media (max-width: 962px) { 
   .details-container {
     flex-direction: column;
-  }
-
-  .personal-details h2 {
-    margin-top: 36px;
-    margin: 10px;
   }
 }
 
