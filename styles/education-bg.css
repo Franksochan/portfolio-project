@@ -1,0 +1,79 @@
+.education-bg-container {
+  position: relative;
+  padding-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 80px;
+}
+
+.education-bg-container h2 {
+  position: relative;
+  display: inline-block;
+  padding: 5px
+}
+
+.education-bg-container h2::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #000000; 
+  animation: underlineAnimation 1s ease; 
+}
+
+@keyframes underlineAnimation {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+.branch {
+  position: relative;
+  padding-left: 20px;
+  margin-top: 35px;
+  transform: translateX(-100px); 
+  animation: slideIn 1s forwards;
+}
+
+.branch::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 0;
+  border-left: 1px solid #000;
+  height: 100%;
+}
+
+.school {
+  font-weight: bold;
+}
+
+.year {
+  font-style: italic;
+}
+
+.award {
+  font-weight: bold;
+  color: #008000;
+}
+
+.level {
+  font-weight: bold;
+}
+
+@keyframes slideIn {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@media (max-width: 468px) {
+  .education-bg-container h2 {
+    font-size: 1.2rem;
+  }
+}

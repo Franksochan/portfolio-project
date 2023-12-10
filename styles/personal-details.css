@@ -1,0 +1,141 @@
+.personal-details {
+  position: relative;
+  background-color: rgb(33, 47, 41);
+  color: #fafbfa;
+}
+
+.details-container {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+
+.personal-details h2 {
+  position: relative;
+  display: inline-block;
+  margin-top: 36px;
+  margin-left: 6px;
+}
+
+.personal-details h2::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #fff; 
+  animation: underlineAnimation 1s ease; 
+}
+
+@keyframes underlineAnimation {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+.details-left-side {
+  flex: 1;
+  text-align: center;
+}
+
+.my-photo {
+  max-height: 600px;
+  max-width: 95%;
+  margin-top: 10px;
+  margin-bottom: 25px;
+  border-radius: 10px;
+}
+
+.details-right-side {
+  flex: 1;
+  text-align: left;
+  width: 95%;
+  margin-top: 20px;
+}
+
+.details-right-side h3 {
+  font-size: 1.5rem;
+  opacity: 0;
+  margin-top: 0;
+  margin-bottom: 20px;
+  transform: translateY(-50px);
+  animation: slideDown 1s forwards;
+}
+
+.details-right-side p {
+  font-size: 1.2rem;
+  margin-top: 0;
+  margin-bottom: 15px;
+  display: block;
+  opacity: 0;
+  transform: translateX(-50px); 
+  animation: slideIn 1s forwards; 
+}
+
+@keyframes slideDown {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@media (max-width: 962px) { 
+  .details-container {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 542px) {  
+  .details-right-side h3 {
+    font-size: 1.2rem;
+  }
+
+  .details-right-side p {
+    width: 100%;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 428px) { 
+  .personal-details h2 {
+    font-size: 1.2rem;
+  }
+  .details-right-side h3 {
+    font-size: 0.9rem;
+  }
+  .details-right-side p {
+    width: 100%;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 236px) { 
+  .details-right-side h3 {
+    font-size: 0.7rem;
+  }
+  .details-right-side p {
+    width: 100%;
+    font-size: 0.6rem;
+  }
+}
+
+@media (max-width: 172px) { 
+  .details-right-side h3 {
+    font-size: 0.5rem;
+  }
+  .details-right-side p {
+    width: 100%;
+
+  }
+}
