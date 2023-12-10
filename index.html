@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -10,6 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"/>
   <link rel="stylesheet" href="styles/home.css">
   <link rel="stylesheet" href="styles/personal-details.css">
   <link rel="stylesheet" href="styles/education-bg.css">
@@ -19,7 +21,22 @@
   <title>Portfolio</title>
 </head>
 <body>
-  <p class="nav-logo">John Lino.dev</p>
+  <nav>
+    <div class="nav__content">
+      <div class="logo"><a href="#">John Lino.dev</a></div>
+      <label for="check" class="checkbox">
+        <i class="ri-menu-line"></i>
+      </label>
+      <input type="checkbox" name="check" id="check" />
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#personal-details">Personal Details</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+      </ul>
+    </div>
+  </nav>
   <main>
     <div class="header-container"> 
       <div class="home-container">
@@ -29,7 +46,7 @@
         <div class="right-side">
           <div class="header-intro">
             <p class="greeting">
-              Hello, I'm John Lino
+              Hello, I'm <b>John Lino</b>
             </p>
             <p class="welcome-message">
               Welcome To My Portfolio!
@@ -51,7 +68,7 @@
       </div>
     </div>
   </main>
-  <section>
+  <section id="personal-details">
     <div class="personal-details">
       <h2>Personal Details</h2>
       <div class="details-container">
@@ -81,7 +98,7 @@
     </div>
   </section>
   <section> 
-    <div class="education-bg-container">
+    <div class="education-bg-container" id="education">
       <h2>Education</h2>
       <div class="branch">
         <span class="school">Amamperez Elementary School</span>
@@ -116,7 +133,7 @@
     </div>
   </section>
   <section>
-    <div class="projects-container">
+    <div class="projects-container" id="projects">
       <h2>Projects</h2>
       <div class="projects">
         <div class="project">
@@ -147,7 +164,7 @@
     </div>
   </section>
   <section>
-    <div class="certificates-container">
+    <div class="certificates-container" id="certifications">
       <h2>Certifications</h2>
       <div class="certificates">
         <div class="certificate">
